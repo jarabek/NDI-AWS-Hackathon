@@ -13,28 +13,7 @@
 <tw-storydata name="Story01" startnode="1" creator="Twine" creator-version="2.0.8" ifid="7647C86C-4A7D-4B84-8837-35C7F0633F77" format="Harlowe" options=""><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
 </script><tw-passagedata pid="1" name="Democracy is a Process, Not an Event" tags="" position="512,300">The path to democracy is not a straight line, nor does it move from triumph to triumph. </tw-passagedata></tw-storydata>
-<!-- injected javascript -->
-<script src="../../assets/js/aws-sdk.min.js"></script>
-<script src="../../assets/js/aws-sdk-mobile-analytics.min.js"></script>
-<script>
-	//Make sure region is 'us-east-1'
-	AWS.config.region = 'us-east-1';
-	AWS.config.credentials = new AWS.CognitoIdentityCredentials({
-	    IdentityPoolId: 'us-east-1:1e75efc4-ac4f-4acf-8f9a-4f60fe7f59f8' //Amazon Cognito Identity Pool ID
-	});
 
-	var options = {
-	    appId : 'fe64c7f3f0b243a9ab9c9d82735f0873', //Amazon Mobile Analytics App ID
-	    appTitle : 'Democratree',              //Optional e.g. 'Example App'
-	    appVersionName : 'V1', //Optional e.g. '1.4.1'
-	    appVersionCode : '42', //Optional e.g. '42'
-	    appPackageName : 'democratree.com'  //Optional e.g. 'com.amazon.example'
-	};
-
-	var mobileAnalyticsClient = new AMA.Manager(options);
-	mobileAnalyticsClient.submitEvents();
-</script>
-<!-- end of injected javascript -->
 <script title="Twine engine code" data-main="harlowe">/**
  * @license almond 0.3.0 Copyright (c) 2011-2014, The Dojo Foundation All Rights Reserved.
  * Available via the MIT or new BSD license.
