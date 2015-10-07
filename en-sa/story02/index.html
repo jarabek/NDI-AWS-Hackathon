@@ -12,7 +12,27 @@
 
 <tw-storydata name="Story02" startnode="1" creator="Twine" creator-version="2.0.8" ifid="7647C86C-4A7D-4B84-8837-35C7F0633F77" format="Harlowe" options=""><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
-</script><tw-passagedata pid="1" name="Democracy Must Deliver" tags="" position="512,300">People want to vote and eat.  </tw-passagedata></tw-storydata>
+
+</script><tw-passagedata pid="1" name="Democracy Must Deliver" tags="testtag" position="131,87">(set: $popularity to 0)
+Your popularity is $popularity
+
+&lt;img src=&quot;../../assets/images/democracy.jpg&quot; width=&quot;400&quot; alt=&quot;Democracy&quot;&gt;
+Freedom translates into having a supply of clean water, having electricity on tap, being able to live in a decent home and have a good job, to be able to send your children to school and to have accessible health care. 
+
+Would you like to let people [[vote-&gt;vote]] or [[eat-&gt;eat]]?
+
+</tw-passagedata><tw-passagedata pid="2" name="vote" tags="" position="372,166">(set: $popularity = $popularity + 50)
+Your popularity is $popularity
+(if: $popularity &gt;= 100)[(link-goto: &quot;Your work is done&quot;, &quot;End&quot;)]
+(else:)
+&lt;img src=&quot;../../assets/images/voting.jpg&quot; width=&quot;400&quot; alt=&quot;Voting&quot;&gt;
+That&#x27;s great but people want to eat as well.  [[Let them eat-&gt;eat]]</tw-passagedata><tw-passagedata pid="3" name="eat" tags="" position="131,237">(set: $popularity = $popularity + 50)
+Your popularity is $popularity
+(if: $popularity &gt;= 100)[(link-goto: &quot;Your work is done&quot;, &quot;End&quot;)]
+(else:)
+&lt;img src=&quot;../../assets/images/hunger.jpg&quot; width=&quot;400&quot; alt=&quot;Hunger&quot;&gt;That&#x27;s great but people want to vote as well.  [[Let them vote-&gt;vote]]
+</tw-passagedata><tw-passagedata pid="4" name="End" tags="" position="370,356">&lt;img src=&quot;../../assets/images/love.jpg&quot; width=&quot;400&quot; alt=&quot;Love&quot;&gt;
+People love you. Democracy rocks!</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">/**
  * @license almond 0.3.0 Copyright (c) 2011-2014, The Dojo Foundation All Rights Reserved.
