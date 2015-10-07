@@ -1,0 +1,17 @@
+--- 
+stories: 
+  - directory: ar-sy/story01
+    name: A Refugee Story
+    description: A story exploring the trials of Syrian refugees trying to escape the conflict zone
+  - directory: en-sa/story02
+    name: A Head Start
+    description: A story to help new mothers with juvenile nutrition in South Africa  
+  - directory: en-sa/story03
+    name: All in a Day
+    description: A story exploring the challenges of high youth unemployment in South Africa
+  - directory: es-pe/story04
+    name: Save every drop
+    description: A story to help encourage Peruvian citizens to conserve water
+  - directory: es-pe/story05
+    name: The First People
+    description: A story to help promote cultural understanding of Peru's indigenous peoples 
